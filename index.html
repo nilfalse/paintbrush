@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>MyPaint &ndash; PaintBrush</title>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    #canvas {
+        border: 1px solid #eee;
+    }
+</style>
+
+<h1>MyPaint &ndash; PaintBrush</h1>
+
+<p>Color:
+    <select id="color">
+        <option value="black">black</option>
+        <option value="gray">gray</option>
+        <option value="red">red</option>
+        <option value="orange">orange</option>
+    </select>
+</p>
+<p>Brush size:
+    <input id="size" type="number" min="1" max="15" value="2" />
+    px
+</p>
+
+<canvas id="canvas" width="800" height="600"></canvas>
+
+<script src="paintbrush.js"></script>
