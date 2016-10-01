@@ -1,0 +1,78 @@
+body {
+    width: 980px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+#canvas {
+    margin: 4px;
+    border: 1px solid #aaa;
+    float: left;
+}
+
+#toolbar {
+    width: 118px;
+    margin: 4px;
+    padding: 8px;
+    float: left;
+    border: 1px solid #aaa;
+}
+
+#toolbox,#colorpalette {
+    margin: 0;
+    padding: 0;
+}
+
+#toolbox li {
+    display: inline-block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid #eee;
+}
+#toolbox li.selected {
+    background-color: #fef;
+}
+
+#size-toolbar {
+    margin: 12px auto;
+}
+
+#size {
+    display: block;
+    width: 118px;
+}
+
+#colorpalette li {
+    display: inline-block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid black;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#current-color {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 8px;
+    border: 1px solid black;
+}
+#colorpalette .color__black { background-color: black; }
+#colorpalette .color__gray { background-color: gray; }
+#colorpalette .color__red { background-color: red; }
+#colorpalette .color__orange { background-color: orange; }
+#colorpalette .color__green { background-color: green; }
+#colorpalette .color__yellow { background-color: yellow; }
+#colorpalette .color__pink { background-color: pink; }
+#colorpalette .color__white { background-color: white; }
+

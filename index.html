@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <title>MyPaint &ndash; PaintBrush</title>
-<style>
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    #canvas {
-        border: 1px solid #eee;
-    }
-</style>
+<link rel="stylesheet" href="paintbrush.css">
 
 <h1>MyPaint &ndash; PaintBrush</h1>
 
-<p>Color:
-    <select id="color">
-        <option value="black">black</option>
-        <option value="gray">gray</option>
-        <option value="red">red</option>
-        <option value="orange">orange</option>
-    </select>
-</p>
-<p>Brush size:
-    <input id="size" type="number" min="1" max="15" value="2" />
-    px
-</p>
-
 <canvas id="canvas" width="800" height="600"></canvas>
+
+<div id="toolbar">
+    <ul id="toolbox">
+        <li data-tool="curve" title="Curve"><img src="assets/tool-curve.svg" alt="Curve" width="24" height="24" /></li>
+        <li data-tool="line" title="Line"><img src="assets/tool-line.svg" alt="Line" width="24" height="24" /></li>
+        <li data-tool="rect" title="Rectangle"><img src="assets/tool-rect.svg" alt="Rectangle" width="24" height="24" /></li>
+        <li data-tool="circle" title="Circle"><img src="assets/tool-circle.svg" alt="Circle" width="24" height="24" /></li>
+    </ul>
+    <p id="size-toolbar"><label for="size">Brush size:</label>
+        <input id="size" type="range" min="1" max="15" value="2" />
+    </p>
+    <div id="current-color" title="Currently selected color"></div>
+    <ul id="colorpalette">
+        <li class="color__black">Black</li>
+        <li class="color__gray">Gray</li>
+        <li class="color__red">Red</li>
+        <li class="color__orange">Orange</li>
+        <li class="color__green">Green</li>
+        <li class="color__yellow">Yellow</li>
+        <li class="color__pink">Pink</li>
+        <li class="color__white">White</li>
+    </ul>
+</div>
 
 <script src="paintbrush.js"></script>
