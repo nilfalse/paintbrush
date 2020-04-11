@@ -2,7 +2,7 @@
 Basic painting done on simple HTML `canvas`.
 May serve as example of using `canvas`.
 
-See https://nilfalse.com/PaintBrush/ for live demo.
+See https://nilfalse.com/labs/paintbrush/ for live demo.
 
 ## Original task
 Create software for drawing basic primitives: line, rectangle, circle and curve.
